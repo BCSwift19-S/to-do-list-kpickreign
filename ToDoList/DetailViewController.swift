@@ -21,6 +21,9 @@ class DetailViewController: UIViewController {
         
         if let toDoItem = toDoItem {
             toDoField.text = toDoItem
+            self.navigationItem.title = "Edit To Do Item"
+        } else {
+            self.navigationItem.title = "New To Do Item"
         }
         enableDisableSaveButton()
         toDoField.becomeFirstResponder()
